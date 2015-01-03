@@ -2,8 +2,13 @@ var promise = new Promise(function (resolve, reject) {
 // Async stuff, create a XHR object, open it and declare method and url
     var request = new XMLHttpRequest();
     
-// Let's use Spotify's public routes as a quick and painless example
-// We will search for Radiohead and specify the query to return artists only
+    /* 
+
+    Let's use Spotify's public routes as a quick 
+    and painless example. We will search for Radiohead 
+    and specify the query to return artists only
+    
+    */
     request.open(
         "GET",
         "https://api.spotify.com/v1/search?q=radiohead&type=artist"
